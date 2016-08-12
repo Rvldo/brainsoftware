@@ -1,0 +1,334 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 24, 2014, 3:36:22 PM
+    Author     : Jimbo
+*/
+
+/* ============ */
+/* Umum n Index */
+/* ============ */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Agency FB";
+    font-weight: bolder;
+    text-decoration: none;
+}
+#wrapper{
+    margin: 0 auto;
+    width: 1345px;
+    background: url(../images/bgi.png);
+    background-size: 100%;
+    background-attachment: fixed;
+}
+#header{
+    /*transition: all 2s ease-in-out; */
+    overflow: hidden;
+    background: #555;
+    margin-bottom: 220px;
+    padding-bottom: 15px;
+    background: rgba(0, 0, 0, 0.4);
+}
+#header:hover {
+    transition: all 1s ease-in-out; 
+    /*background: rgba(0, 0, 0, 0.8);*/
+}
+#header:hover #menu_header ul li a{
+    color: #dddddd;
+    /*transition: all 2s ease-in-out;*/
+}
+#header hr{
+    width: 500px;
+}
+#header #menu_header{
+    margin-top: 40px;
+    float: left;
+    margin-left: 30px;
+}
+#header #logo{
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 595px;
+}
+#header img:hover{
+    /*transition: all 1s ease-in-out;*/
+    transform: rotateY(360deg);
+}
+#header #menu_header ul li{
+    display: inline;
+    list-style: none;
+    padding-right: 30px;
+}
+#header #menu_header .active{
+    color: #dddddd;
+}
+#header #menu_header ul li a{
+    /*transition: all 2s ease-in-out;*/
+    color: #222;
+    font-weight: bolder;
+}
+#header #menu_header ul li a:hover{
+    text-shadow: 1px 1px 1px #dddddd;
+    /*transition: all .35s ease-in-out;*/
+}
+#header #social{
+    float: right;
+    margin-top: 40px;
+    margin-right: 30px;
+}
+#header #social ul li{
+    list-style: none;
+    display: inline;
+    padding-left: 30px;
+    float: right;
+}
+#header #social .a1{
+    width: 25px;
+}
+#body{
+}
+#body #menu_body{
+    /*transition: all 1s ease-in-out;*/
+    text-align: center;
+    color: #222;
+    padding: 10px;
+    padding-bottom: 175px;
+    background: rgba(0, 0, 0, 0.3);
+}
+#body #menu_body:hover{
+    transition: all 1s ease-in-out;
+    background: rgba(0, 0, 0, 0.4);
+    color: #dddddd;
+}
+#body #menu_body p{
+    position: absolute;
+    margin-left: 580px;
+    margin-top: 50px;
+    font-size: 40px;
+    visibility: visible;
+}
+#body #menu_body:hover p{
+    visibility: hidden;
+}
+#body #menu_body ul li{
+    list-style: none;
+    display: inline;
+}
+.w1, 
+.w2, 
+.w3{
+    transition: all 1s ease-in-out;
+    //visibility: hidden;
+    position: absolute;
+    margin-left: -540px;
+    visibility: hidden;
+}
+#body #menu_body:hover .w1{
+    transform: translateX(0);
+    transition: all 1s ease-in-out;
+    z-index: 1;
+    visibility: visible;
+}
+#body #menu_body:hover .w2{
+    transform: translateX(363px);
+    transition: all 1s ease-in-out;
+    z-index: 2;
+    visibility: visible;
+}
+#body #menu_body:hover .w3{
+    transform: translateX(726px);
+    transition: all 1s ease-in-out;
+    z-index: 3;
+    visibility: visible;
+}
+#footer{
+    clear: both;
+    margin-top: 80px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 15px;
+}
+
+/* ===== */
+/* Works */
+/* ===== */
+
+#body #menu_works{
+    /*transition: all 3s ease-in-out;*/
+    text-align: center;
+    margin-top: -200px;
+    color: #222;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.3);
+}
+#body #menu_works:hover{
+    /*transition: all 1s ease-in-out;*/
+    background: rgba(0, 0, 0, 0.8);
+    color: #dddddd;
+}
+#body #menu_works ul li{
+    display: inline;
+}
+#body #menu_works ul li img{
+    padding: 25px;
+    /*transition: all .45s ease-in-out;*/
+}
+#body #menu_works ul li img:hover{
+    cursor: pointer;
+    /*transition: all 2s ease-in-out;*/
+    transform: rotate(360deg) scale(2);
+}
+
+/* ======= */
+/* Contact */
+/* ======= */
+
+#body #menu_contact{
+    /*transition: all 1s ease-in-out;*/
+    text-align: center;
+    color: #222;
+    margin-top: -45px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+#body #menu_contact:hover{
+    /*transition: all .35s ease-in-out;*/
+    background: rgba(0, 0, 0, 0.8);
+    color: #dddddd;
+}
+#body #menu_contact table{
+    margin-top: 20px;
+    margin-left: 70px;
+    float: left;
+}
+#body #menu_contact table input{
+    /*transition: all 1s ease-in-out;*/
+    background: none;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    height: 38px;
+    width: 288px;
+    color: #dddddd;
+    padding-left: 5px;
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+#body #menu_contact table textarea{letter-spacing: 1px;}
+#body #menu_contact table input:hover, 
+#body #menu_contact table textarea:hover{
+    background: rgba(0, 0, 0, 0.4);
+    /*transition: all 1s ease-in-out;*/
+    letter-spacing: 2px;
+    font-size: 25px;
+}
+#body #menu_contact table textarea{
+    font-size: 25px;
+    /*transition: all 1s ease-in-out;*/
+    background: none;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding: 5px;
+    color: #dddddd;
+}
+#body #menu_contact table .submit{
+    /*transition: all 1s ease-in-out;*/
+    width: 90px;
+}
+#body #menu_contact table .submit:hover{
+    background: rgba(0, 0, 0, 0.5);
+    /*transition: all 1s ease-in-out;*/
+    border-radius: 15px;
+}
+#body #menu_contact #contact_social{
+    margin-top: 150px;
+    margin-right: 70px;
+    float: right;
+    padding-left: 180px;
+    border-left: 1px solid rgba(0, 0, 0, 0.4);
+}
+#body #menu_contact #contact_social ul li{
+    /*transition: all 1s ease-in-out;*/
+    display: inline;
+    font-size: 25px;
+    padding: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 35px;
+    letter-spacing: 3px;
+}
+#body #menu_contact #contact_social ul li:hover{
+    background: rgba(0, 0, 0, 0.5);
+    /*transition: all 1s ease-in-out;*/
+}
+#body #menu_contact #contact_social ul li a{
+    color: #999;
+}
+#body #menu_contact #contact_social ul li a:hover{
+    color: #dddddd;
+}
+#body #menu_contact #contact_social h1{
+    margin-left: -155px;
+    position: absolute;
+    color: #dddddd;
+}
+/* ===== */
+/* About */
+/* ===== */
+
+#body #menu_about{
+    /*transition: all 3s ease-in-out;*/
+    text-align: center;
+    color: #222;
+    margin-top: -45px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+#body #menu_about:hover{
+    /*transition: all 1s ease-in-out;*/
+    background: rgba(0, 0, 0, 0.8);
+    color: #dddddd;
+}
+#body #menu_about p{
+    width: 600px;
+    text-align: left;
+    text-indent: 25px;
+    margin-top: 35px;
+    margin-left: 85px;
+    line-height: 2;
+    letter-spacing: 2px;
+}
+
+/* ======================= */
+/* WHAT MAKES US DIFFERENT */
+/* ======================= */
+
+#body #info
+{
+    margin-top: -200px;
+    text-align: center;
+    margin-bottom: 10px;
+    background: rgba(0, 0, 0, 0.4);
+    padding-left: 15px;
+}
+#body #info ul li
+{
+    list-style: none;
+    text-align: left;
+    padding: 15px;
+}
+#body #info ul li a{
+    color: #dddddd;
+}
+#body:hover .a{
+    /*transition: all 1s ease-in-out;*/
+    transform: scale(2);
+}
+#body #info a{
+    font-size: 90px;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
+}
